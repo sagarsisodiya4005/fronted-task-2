@@ -52,9 +52,9 @@ const App = () => {
 
         <Route element={<Layout allowedRoles={['patient']} />}>
           <Route path="/patient" element={<PatientDashboard />} />
-          <Route path="/patient/book" element={<DashboardPlaceholder title="Book Appointment" />} />
-          <Route path="/patient/prescriptions" element={<DashboardPlaceholder title="My Prescriptions" />} />
-          <Route path="/patient/reports" element={<DashboardPlaceholder title="My Reports" />} />
+          <Route path="/patient/book" element={<Navigate to="/patient" replace />} />
+          <Route path="/patient/prescriptions" element={<Navigate to="/patient" replace />} />
+          <Route path="/patient/reports" element={<Navigate to="/patient" replace />} />
         </Route>
 
         <Route element={<Layout allowedRoles={['receptionist']} />}>

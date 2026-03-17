@@ -24,9 +24,9 @@ const Layout = ({ allowedRoles }) => {
     ],
     patient: [
       { path: '/patient', label: 'My Appointments', icon: Calendar },
-      { path: '/patient/book', label: 'Book Appointment', icon: Activity },
-      { path: '/patient/prescriptions', label: 'Prescriptions', icon: ClipboardList },
-      { path: '/patient/reports', label: 'Reports', icon: Activity },
+      { path: '/patient', label: 'Book Appointment', icon: Activity },
+      { path: '/patient', label: 'Prescriptions', icon: ClipboardList },
+      { path: '/patient', label: 'Reports', icon: Activity },
     ],
     receptionist: [
       { path: '/receptionist', label: 'Daily Queue', icon: Users },
